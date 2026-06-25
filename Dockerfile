@@ -12,4 +12,7 @@ COPY . .
 
 RUN uv pip install -e . --no-deps
 
-CMD ["uv", "run", "fastapi", "run", "app/main.py", "--host", "0.0.0.0", "--port", "8000"]
+COPY entrypoint.sh .
+RUN chmod +x entrypoint.sh
+
+CMD ["./entrypoint.sh"]

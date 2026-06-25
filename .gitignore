@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+tutor_hub_rag.egg-info/
+.venv/
+.pytest_cache/
+.vscode/
+dist/
+build/

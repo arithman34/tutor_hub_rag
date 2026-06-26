@@ -26,6 +26,7 @@ jobs:
       DATABASE_URL: postgresql+asyncpg://postgres:password@localhost:5432/tutor_rag_test
       SECRET_KEY: test-secret-key
       OPENAI_API_KEY: sk-dummy
+      API_KEY: test-api-key
     steps:
       - uses: actions/checkout@v4
 
